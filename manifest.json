@@ -1,0 +1,18 @@
+{
+  "name": "Perfection Interiors & Designs",
+  "short_name": "Perfection",
+  "description": "Premium interior fittings and designs in Lusaka, Zambia.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/screenshot-1791663740274.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
