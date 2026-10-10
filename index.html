@@ -5,25 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Perfection Interiors & Designs offers premium kitchen units, wardrobes, TV consoles, bathroom vanities and interior fittings in Lusaka, Zambia.">
+<title>Perfection Interiors & Designs | Zambia</title>
 
-<title>Perfection Interiors & Designs | Luxury Interiors Zambia</title>
+<meta name="description"
+content="Perfection Interiors & Designs offers premium kitchen units, wardrobes, TV consoles, bathroom vanities and custom interior fittings in Lusaka, Zambia.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* GLOBAL DESIGN */
-
 :root {
-  --gold: #d4af37;
-  --light-gold: #f1d98b;
-  --black: #080808;
-  --dark: #121212;
+  --black: #111111;
+  --gold: #b99346;
+  --gold-light: #e5ca89;
   --white: #ffffff;
-  --grey: #b8b8b8;
+  --offwhite: #f7f7f5;
+  --grey: #666666;
 }
 
 * {
@@ -37,9 +37,9 @@ html {
 }
 
 body {
-  background: var(--black);
-  color: var(--white);
   font-family: 'DM Sans', Arial, sans-serif;
+  color: var(--black);
+  background: white;
   line-height: 1.7;
 }
 
@@ -53,32 +53,32 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 section {
-  padding: 100px 8%;
-  scroll-margin-top: 85px;
+  padding: 90px 8%;
+  scroll-margin-top: 100px;
 }
 
-/* NAVIGATION */
+/* HEADER */
 
 header {
-  background: rgba(5,5,5,0.97);
-  border-bottom: 1px solid rgba(212,175,55,0.35);
-  padding: 12px 7%;
+  background: #080808;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  padding: 12px 7%;
+  gap: 25px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid var(--gold);
 }
 
 .logo img {
-  width: 190px;
+  width: 180px;
   height: auto;
-  display: block;
 }
 
 nav {
@@ -90,187 +90,174 @@ nav {
 nav a {
   color: white;
   font-size: 14px;
-  transition: 0.3s;
+  font-weight: 500;
+  transition: .3s;
 }
 
 nav a:hover {
-  color: var(--gold);
+  color: var(--gold-light);
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero {
-  min-height: 90vh;
-
+  min-height: 85vh;
   background:
-  linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.75)),
-  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85");
+    linear-gradient(
+      rgba(0,0,0,.55),
+      rgba(0,0,0,.60)
+    ),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85");
 
   background-size: cover;
   background-position: center;
 
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-
-  padding: 90px 20px;
+  padding: 80px 8%;
 }
 
 .hero-content {
-  max-width: 950px;
+  max-width: 750px;
 }
 
-.hero-small {
-  color: var(--light-gold);
-  letter-spacing: 5px;
+.hero-label {
+  color: var(--gold-light);
   font-size: 13px;
+  letter-spacing: 4px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: clamp(44px, 7vw, 90px);
-  color: var(--light-gold);
-  line-height: 1.15;
-  letter-spacing: 3px;
+  color: white;
+  font-size: clamp(40px, 6vw, 75px);
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
-.hero h2 {
-  font-family: 'DM Sans', sans-serif;
-  font-size: clamp(17px, 3vw, 28px);
-  font-weight: 500;
-  letter-spacing: 6px;
-  margin-top: 15px;
+.hero h1 span {
+  color: var(--gold-light);
 }
 
 .hero p {
-  color: #eee;
-  margin: 25px 0;
-  letter-spacing: 2px;
+  color: #eeeeee;
+  font-size: 17px;
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 /* BUTTONS */
 
 .btn {
   display: inline-block;
-  background: linear-gradient(135deg,#b88a24,#f1d98b,#b88a24);
-  color: #080808;
-  padding: 15px 32px;
+  padding: 15px 30px;
+  background: var(--gold);
+  color: #111;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1px;
   border-radius: 3px;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(212,175,55,0.25);
+  background: var(--gold-light);
+  transform: translateY(-3px);
 }
 
-.btn-outline {
-  display: inline-block;
-  color: var(--light-gold);
-  border: 1px solid var(--gold);
-  padding: 14px 30px;
-  margin-left: 10px;
-  font-size: 13px;
-  letter-spacing: 1px;
-  transition: 0.3s;
+.btn-dark {
+  background: #111;
+  color: white;
 }
 
-.btn-outline:hover {
+.btn-dark:hover {
   background: var(--gold);
   color: black;
 }
 
-/* SECTION HEADINGS */
+/* GENERAL HEADINGS */
 
 .section-label {
   color: var(--gold);
-  letter-spacing: 4px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 12px;
-  text-align: center;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .section-title {
-  text-align: center;
-  color: var(--light-gold);
   font-size: clamp(30px, 4vw, 46px);
   margin-bottom: 20px;
+  line-height: 1.3;
 }
 
 .section-description {
   color: var(--grey);
-  text-align: center;
   max-width: 750px;
-  margin: 0 auto 55px;
+  margin-bottom: 45px;
 }
 
 /* ABOUT */
 
 .about {
-  background: var(--dark);
+  background: white;
 }
 
-.about-content {
+.about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
   align-items: center;
+  gap: 65px;
 }
 
 .about-image img {
   width: 100%;
-  height: 470px;
+  height: 480px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.about-text h2 {
-  font-size: 40px;
-  color: var(--light-gold);
-  margin-bottom: 25px;
-}
-
 .about-text p {
-  color: #ccc;
+  color: #555;
   margin-bottom: 20px;
 }
 
 /* SERVICES */
 
+.services {
+  background: var(--offwhite);
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
 .service-card {
-  background: #151515;
-  border: 1px solid #3d321d;
-  padding: 40px 28px;
-  border-radius: 6px;
-  transition: 0.3s;
+  background: white;
+  padding: 35px 28px;
+  border: 1px solid #e8e8e8;
+  border-bottom: 3px solid var(--gold);
+  transition: .3s;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--gold);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
 }
 
 .service-number {
   color: var(--gold);
+  font-weight: 700;
   font-size: 13px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .service-card h3 {
-  color: var(--light-gold);
-  font-size: 22px;
-  margin-bottom: 15px;
+  font-size: 21px;
+  margin-bottom: 12px;
 }
 
 .service-card p {
@@ -281,97 +268,125 @@ nav a:hover {
 /* GALLERY */
 
 .gallery {
-  background: var(--dark);
+  background: white;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
-.gallery-item {
-  position: relative;
+.gallery-card {
+  background: var(--offwhite);
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
-.gallery-item img {
+.gallery-card img {
   width: 100%;
-  height: 320px;
+  height: 280px;
   object-fit: cover;
-  display: block;
-  transition: 0.5s;
+  transition: .4s;
 }
 
-.gallery-item:hover img {
-  transform: scale(1.08);
+.gallery-card:hover img {
+  transform: scale(1.04);
 }
 
 .gallery-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 30px 20px 15px;
-  background: linear-gradient(transparent,rgba(0,0,0,0.9));
-  color: white;
-  font-size: 17px;
+  padding: 20px;
+}
+
+.gallery-caption h3 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+.gallery-caption p {
+  color: var(--grey);
+  font-size: 13px;
 }
 
 /* WHY CHOOSE US */
 
+.why {
+  background: #111;
+  color: white;
+}
+
+.why .section-title {
+  color: white;
+}
+
 .why-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
 }
 
 .why-card {
-  text-align: center;
-  padding: 30px 20px;
+  border: 1px solid #444;
+  padding: 30px;
 }
 
 .why-card h3 {
-  color: var(--light-gold);
-  margin-bottom: 15px;
+  color: var(--gold-light);
+  margin-bottom: 12px;
 }
 
 .why-card p {
-  color: var(--grey);
+  color: #cccccc;
   font-size: 14px;
 }
 
 /* CONTACT */
 
 .contact {
-  text-align: center;
-  background:
-  linear-gradient(rgba(0,0,0,0.88),rgba(0,0,0,0.9)),
-  url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80");
-
-  background-size: cover;
-  background-position: center;
+  background: var(--offwhite);
 }
 
-.contact h2 {
-  color: var(--light-gold);
-  font-size: clamp(30px, 4vw, 48px);
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contact-panel {
+  background: white;
+  padding: 45px;
+  border-left: 4px solid var(--gold);
+  box-shadow: 0 5px 30px rgba(0,0,0,.05);
+}
+
+.contact-panel h3 {
+  font-size: 27px;
   margin-bottom: 20px;
 }
 
-.contact p {
-  color: #ddd;
-  margin-bottom: 15px;
+.contact-panel p {
+  color: var(--grey);
+  margin-bottom: 25px;
 }
 
 /* FOOTER */
 
 footer {
-  background: #050505;
-  border-top: 1px solid #45391e;
-  padding: 45px 20px;
+  background: #080808;
+  color: white;
+  padding: 50px 8%;
   text-align: center;
+}
+
+footer img {
+  width: 200px;
+  margin: 0 auto 25px;
 }
 
 footer p {
@@ -380,8 +395,8 @@ footer p {
   margin-top: 10px;
 }
 
-footer strong {
-  color: var(--gold);
+footer a {
+  color: var(--gold-light);
 }
 
 /* WHATSAPP */
@@ -392,17 +407,17 @@ footer strong {
   right: 25px;
   background: #25d366;
   color: white;
-  padding: 15px 22px;
+  padding: 14px 22px;
   border-radius: 40px;
   font-weight: 700;
   font-size: 14px;
-  z-index: 999;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  z-index: 1001;
+  box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
 
 /* MOBILE */
 
-@media(max-width:850px) {
+@media (max-width: 850px) {
 
   header {
     flex-direction: column;
@@ -410,7 +425,7 @@ footer strong {
   }
 
   .logo img {
-    width: 160px;
+    width: 150px;
   }
 
   nav {
@@ -419,55 +434,53 @@ footer strong {
   }
 
   section {
-    padding: 70px 6%;
+    padding: 65px 6%;
   }
 
-  .about-content {
+  .about-grid,
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
-
-}
-
-@media(max-width:550px) {
-
-  .hero h2 {
-    letter-spacing: 3px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .btn-outline {
-    margin: 15px 0 0;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero {
-    min-height: 75vh;
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 550px) {
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 
   .about-image img {
     height: 300px;
   }
 
-  .whatsapp {
-    bottom: 15px;
-    right: 15px;
+  .contact-panel {
+    padding: 30px;
   }
 
+  .whatsapp {
+    right: 15px;
+    bottom: 15px;
+  }
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- HEADER -->
 
 <header>
 
@@ -493,25 +506,27 @@ footer strong {
 
   <div class="hero-content">
 
-    <div class="hero-small">
-      LUXURY INTERIOR FITTINGS • LUSAKA, ZAMBIA
-    </div>
+    <p class="hero-label">
+      PREMIUM INTERIOR SOLUTIONS | ZAMBIA
+    </p>
 
-    <h1>PERFECTION</h1>
+    <h1>
+      Transforming Spaces
+      Into <span>Masterpieces.</span>
+    </h1>
 
-    <h2>INTERIORS & DESIGNS</h2>
+    <p>
+      Bespoke kitchen units, wardrobes, TV consoles
+      and modern interior fittings crafted with
+      precision, elegance and attention to detail.
+    </p>
 
-    <p>DESIGNED TO PERFECTION, BUILT TO INSPIRE.</p>
-
-    <a class="btn"
-       href="https://wa.me/260779126103?text=Hello%20Perfection%20Interiors%20%26%20Designs%2C%20I%20would%20like%20a%20quotation."
-       target="_blank"
-       rel="noopener noreferrer">
-       REQUEST A QUOTATION
-    </a>
-
-    <a class="btn-outline" href="#services">
-      EXPLORE OUR SERVICES
+    <a
+      class="btn"
+      href="https://wa.me/260779126103?text=Hello%20Perfection%20Interiors%20%26%20Designs%2C%20I%20would%20like%20a%20quotation."
+      target="_blank"
+      rel="noopener noreferrer">
+      REQUEST A QUOTATION
     </a>
 
   </div>
@@ -522,50 +537,52 @@ footer strong {
 
 <section class="about" id="about">
 
-  <div class="about-content">
+  <div class="about-grid">
 
     <div class="about-image">
 
       <img
         src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
-        alt="Luxury modern interior">
+        alt="Modern interior design inspiration"
+        loading="lazy">
 
     </div>
 
     <div class="about-text">
 
-      <p style="color:#d4af37;letter-spacing:3px;">
-        ABOUT OUR COMPANY
-      </p>
+      <p class="section-label">ABOUT OUR COMPANY</p>
 
-      <h2>Crafting Spaces of Distinction</h2>
-
-      <p>
-        At Perfection Interiors & Designs, we believe every
-        space deserves exceptional craftsmanship and
-        thoughtful design.
-      </p>
+      <h2 class="section-title">
+        Designed to Perfection,
+        Built to Inspire.
+      </h2>
 
       <p>
-        Based in Lusaka, Zambia, we specialise in creating
-        premium custom interior fittings for residential
-        and commercial properties.
+        Perfection Interiors & Designs is a
+        professional interior fittings and design
+        business based in Lusaka, Zambia.
       </p>
 
       <p>
-        From elegant kitchen units and built-in wardrobes
-        to contemporary TV consoles and bathroom vanities,
-        our work combines beauty, functionality and
-        attention to detail.
+        We specialise in creating stylish,
+        functional and modern spaces through
+        carefully designed interior solutions.
       </p>
 
       <p>
-        We are mobile and undertake projects throughout
-        Zambia and beyond.
+        Our services range from custom kitchen
+        cabinetry and built-in wardrobes to
+        entertainment units, bathroom vanities
+        and commercial interior fittings.
       </p>
 
-      <a class="btn" href="#contact">
-        CONTACT OUR TEAM
+      <p>
+        We are mobile and undertake projects
+        throughout Zambia and beyond.
+      </p>
+
+      <a href="#services" class="btn btn-dark">
+        EXPLORE OUR SERVICES
       </a>
 
     </div>
@@ -576,65 +593,92 @@ footer strong {
 
 <!-- SERVICES -->
 
-<section id="services">
+<section class="services" id="services">
 
-  <p class="section-label">WHAT WE DO</p>
+  <p class="section-label">OUR EXPERTISE</p>
 
-  <h2 class="section-title">Our Premium Services</h2>
+  <h2 class="section-title">
+    Professional Interior Solutions
+  </h2>
 
   <p class="section-description">
-    Bespoke interior solutions designed to enhance
-    your home, office and lifestyle.
+    From residential interiors to commercial
+    installations, we provide customised
+    solutions to suit your space and vision.
   </p>
 
   <div class="services-grid">
 
     <div class="service-card">
-      <div class="service-number">01 / DESIGN</div>
+      <p class="service-number">01</p>
       <h3>Custom Kitchen Units</h3>
-      <p>Modern fitted kitchens, elegant cabinetry, storage solutions and premium finishes.</p>
+      <p>
+        Modern fitted kitchens, elegant cabinetry,
+        countertops and practical storage solutions.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">02 / STORAGE</div>
+      <p class="service-number">02</p>
       <h3>Built-in Wardrobes</h3>
-      <p>Custom wardrobes, sliding doors, walk-in closets and intelligent storage systems.</p>
+      <p>
+        Beautiful wardrobes, sliding doors,
+        walk-in closets and custom storage systems.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">03 / ENTERTAINMENT</div>
+      <p class="service-number">03</p>
       <h3>TV Wall Units & Consoles</h3>
-      <p>Luxury entertainment walls, floating TV consoles and stylish LED features.</p>
+      <p>
+        Contemporary entertainment walls,
+        floating consoles and stylish LED finishes.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">04 / BATHROOMS</div>
+      <p class="service-number">04</p>
       <h3>Bathroom Vanities</h3>
-      <p>Beautifully crafted bathroom vanities with elegant countertops and modern finishes.</p>
+      <p>
+        Modern bathroom cabinets and vanity
+        units with refined finishing details.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">05 / INSTALLATIONS</div>
+      <p class="service-number">05</p>
       <h3>Aluminium Doors & Windows</h3>
-      <p>Contemporary aluminium doors and windows for residential and commercial spaces.</p>
+      <p>
+        Contemporary aluminium installations
+        for residential and commercial properties.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">06 / WORKSPACES</div>
-      <h3>Office Furniture & Built-ins</h3>
-      <p>Custom desks, shelving, cabinets and professional workspace fittings.</p>
+      <p class="service-number">06</p>
+      <h3>Office Furniture</h3>
+      <p>
+        Custom office desks, shelving,
+        cabinetry and professional workspace fittings.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">07 / FINISHES</div>
+      <p class="service-number">07</p>
       <h3>Ceiling & Interior Finishes</h3>
-      <p>Refined ceilings, wall finishes and interior detailing for a polished appearance.</p>
+      <p>
+        Modern ceiling solutions, wall finishes
+        and refined interior detailing.
+      </p>
     </div>
 
     <div class="service-card">
-      <div class="service-number">08 / RENOVATIONS</div>
+      <p class="service-number">08</p>
       <h3>Home & Office Renovations</h3>
-      <p>Modern upgrades and transformations that breathe new life into existing spaces.</p>
+      <p>
+        Thoughtful upgrades that transform
+        existing spaces into modern interiors.
+      </p>
     </div>
 
   </div>
@@ -645,57 +689,103 @@ footer strong {
 
 <section class="gallery" id="gallery">
 
-  <p class="section-label">OUR INSPIRATION</p>
+  <p class="section-label">DESIGN INSPIRATION</p>
 
-  <h2 class="section-title">Luxury Design Gallery</h2>
+  <h2 class="section-title">
+    Explore Beautiful Interior Spaces
+  </h2>
 
   <p class="section-description">
-    Explore inspiring interior concepts.
-    Photographs of our completed projects will be added soon.
+    Discover modern interior design inspiration.
+    These are illustrative photographs, not
+    completed Perfection Interiors & Designs projects.
+    Our actual project portfolio will be added soon.
   </p>
 
   <div class="gallery-grid">
 
-    <div class="gallery-item">
+    <div class="gallery-card">
+
       <img
         src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
-        alt="Contemporary luxury living room">
-      <div class="gallery-caption">Luxury Living Spaces</div>
+        alt="Contemporary living room inspiration"
+        loading="lazy">
+
+      <div class="gallery-caption">
+        <h3>Contemporary Living</h3>
+        <p>Modern residential design inspiration</p>
+      </div>
+
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-card">
+
       <img
         src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
-        alt="Modern interior design">
-      <div class="gallery-caption">Modern Interior Design</div>
+        alt="Elegant home interior inspiration"
+        loading="lazy">
+
+      <div class="gallery-caption">
+        <h3>Elegant Interiors</h3>
+        <p>Refined spaces and premium finishes</p>
+      </div>
+
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-card">
+
       <img
-        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
-        alt="Elegant contemporary home">
-      <div class="gallery-caption">Elegant Home Finishes</div>
+        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+        alt="Luxury home interior inspiration"
+        loading="lazy">
+
+      <div class="gallery-caption">
+        <h3>Luxury Home Design</h3>
+        <p>Beautiful contemporary interiors</p>
+      </div>
+
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-card">
+
       <img
-        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
-        alt="Premium residential interior">
-      <div class="gallery-caption">Premium Residential Interiors</div>
+        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+        alt="Modern interior fittings inspiration"
+        loading="lazy">
+
+      <div class="gallery-caption">
+        <h3>Modern Finishes</h3>
+        <p>Thoughtful interior detailing</p>
+      </div>
+
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-card">
+
       <img
-        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85"
-        alt="Luxury interior inspiration">
-      <div class="gallery-caption">Contemporary Elegance</div>
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85"
+        alt="Contemporary residential architecture"
+        loading="lazy">
+
+      <div class="gallery-caption">
+        <h3>Residential Elegance</h3>
+        <p>Contemporary architectural inspiration</p>
+      </div>
+
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-card">
+
       <img
-        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
-        alt="Modern architectural interior">
-      <div class="gallery-caption">Architectural Inspiration</div>
+        src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=85"
+        alt="Stylish residential interior inspiration"
+        loading="lazy">
+
+      <div class="gallery-caption">
+        <h3>Inspired Spaces</h3>
+        <p>Functional design meets modern beauty</p>
+      </div>
+
     </div>
 
   </div>
@@ -704,37 +794,48 @@ footer strong {
 
 <!-- WHY CHOOSE US -->
 
-<section>
+<section class="why">
 
-  <p class="section-label">THE PERFECTION STANDARD</p>
-
-  <h2 class="section-title">Why Choose Us?</h2>
-
-  <p class="section-description">
-    We believe exceptional spaces begin with
-    exceptional attention to detail.
+  <p class="section-label">
+    THE PERFECTION STANDARD
   </p>
+
+  <h2 class="section-title">
+    Why Choose Perfection?
+  </h2>
 
   <div class="why-grid">
 
     <div class="why-card">
       <h3>Quality Craftsmanship</h3>
-      <p>We focus on precise workmanship and carefully considered finishes.</p>
+      <p>
+        We focus on careful workmanship,
+        precise installations and elegant finishes.
+      </p>
     </div>
 
     <div class="why-card">
-      <h3>Custom Designs</h3>
-      <p>Every project is tailored to suit your space, style and requirements.</p>
+      <h3>Customised Solutions</h3>
+      <p>
+        Designs tailored to your personal
+        preferences and available space.
+      </p>
     </div>
 
     <div class="why-card">
-      <h3>Modern Elegance</h3>
-      <p>We combine timeless aesthetics with practical modern functionality.</p>
+      <h3>Professional Approach</h3>
+      <p>
+        Clear communication and attention
+        to detail throughout your project.
+      </p>
     </div>
 
     <div class="why-card">
       <h3>Mobile Services</h3>
-      <p>Based in Lusaka, we undertake projects across Zambia and beyond.</p>
+      <p>
+        Based in Lusaka and available for
+        projects across Zambia and beyond.
+      </p>
     </div>
 
   </div>
@@ -745,31 +846,61 @@ footer strong {
 
 <section class="contact" id="contact">
 
-  <p class="section-label">LET'S WORK TOGETHER</p>
+  <div class="contact-grid">
 
-  <h2>Let's Create Something Exceptional</h2>
+    <div class="contact-info">
 
-  <p>
-    Your dream interior deserves the perfect finishing touch.
-  </p>
+      <p class="section-label">
+        GET IN TOUCH
+      </p>
 
-  <p>
-    Contact Perfection Interiors & Designs for
-    custom interior fittings and design enquiries.
-  </p>
+      <h2 class="section-title">
+        Let's Bring Your Vision to Life.
+      </h2>
 
-  <p><strong>Location:</strong> Lusaka, Zambia</p>
+      <p>
+        Planning a kitchen renovation,
+        wardrobe installation or a
+        complete interior transformation?
+      </p>
 
-  <p><strong>Call / WhatsApp:</strong> +260 779 126 103</p>
+      <p>
+        Contact our team to discuss your
+        project requirements.
+      </p>
 
-  <br>
+      <p>
+        <strong>Location:</strong>
+        Lusaka, Zambia
+      </p>
 
-  <a class="btn"
-     href="https://wa.me/260779126103?text=Hello%20Perfection%20Interiors%20%26%20Designs%2C%20I%20would%20like%20to%20discuss%20a%20project."
-     target="_blank"
-     rel="noopener noreferrer">
-     START YOUR PROJECT ON WHATSAPP
-  </a>
+      <p>
+        <strong>Phone / WhatsApp:</strong>
+        +260 779 126 103
+      </p>
+
+    </div>
+
+    <div class="contact-panel">
+
+      <h3>Request a Quotation</h3>
+
+      <p>
+        Tell us about your project and
+        the interior solutions you're looking for.
+      </p>
+
+      <a
+        class="btn"
+        href="https://wa.me/260779126103?text=Hello%20Perfection%20Interiors%20%26%20Designs%2C%20I%20would%20like%20to%20request%20a%20quotation."
+        target="_blank"
+        rel="noopener noreferrer">
+        CHAT ON WHATSAPP
+      </a>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -777,23 +908,40 @@ footer strong {
 
 <footer>
 
-  <strong>PERFECTION INTERIORS & DESIGNS</strong>
+  <img
+    src="screenshot-1791663740274.png"
+    alt="Perfection Interiors & Designs Logo">
 
-  <p>DESIGNED TO PERFECTION, BUILT TO INSPIRE.</p>
+  <p>
+    DESIGNED TO PERFECTION, BUILT TO INSPIRE.
+  </p>
 
-  <p>Lusaka, Zambia | Serving Clients Across Zambia & Beyond</p>
+  <p>
+    Lusaka, Zambia | Serving Clients Across Zambia & Beyond
+  </p>
 
-  <p>© 2026 Perfection Interiors & Designs. All Rights Reserved.</p>
+  <p>
+    Phone / WhatsApp:
+    <a href="https://wa.me/260779126103">
+      +260 779 126 103
+    </a>
+  </p>
+
+  <p>
+    © 2026 Perfection Interiors & Designs.
+    All Rights Reserved.
+  </p>
 
 </footer>
 
-<!-- FLOATING WHATSAPP -->
+<!-- FLOATING WHATSAPP BUTTON -->
 
-<a class="whatsapp"
-   href="https://wa.me/260779126103"
-   target="_blank"
-   rel="noopener noreferrer">
-   WhatsApp
+<a
+  class="whatsapp"
+  href="https://wa.me/260779126103?text=Hello%20Perfection%20Interiors%20%26%20Designs"
+  target="_blank"
+  rel="noopener noreferrer">
+  WhatsApp
 </a>
 
 </body>
